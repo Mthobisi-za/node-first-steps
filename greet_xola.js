@@ -1,3 +1,4 @@
+"use strict"
 //install modules
  const chalk = require("chalk");
  const greet = require('./greet');
@@ -5,10 +6,10 @@
  //install modules
 
  const styledMessage = chalk.bgGreen.black(greet('Xola'));
- var data = figlet(greet("Mtho"), (err, data)=>{
-    console.log(data)
+ var datap = figlet(greet("Xola"), (err, data)=>{
+     console.log(data)
     return data
  })
 
-console.log(data)
+
 console.log(styledMessage)
